@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
 }
 
-/* Style the header */
+/* Header/Blog Title */
 .header {
-  background-color: #e29fe2;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
 }
 
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #333;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #000000;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -41,37 +44,123 @@ body {
   background-color: #ddd;
   color: black;
 }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
 
 <div class="header">
   <h1>RadiantGlow</h1>
+  <p>O melhor para sua pele</p>
 </div>
 
 <div class="topnav">
-    <a href="#">Inicio</a>
-    <a href="#">Produtos</a>
-    <a href="#">Sobre o RadiantGlow</a>
-    <a href="#">Descubra os melhores produtos para seu tipo de pele</a>
+  <a href="#">Inicio</a>
+  <a href="#">Comprar agora</a>
+  <a href="#">Descubra os melhores produros para seu tipo de pele</a>
+  <a href="#" style="float:right">Conta</a>
 </div>
-  
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Radiant Glow</title>
-        <style>
-    #textoCentralizado {
-        text-align: center; /* Centraliza o texto horizontalmente */
-        font-size: 24px; /* Define o tamanho da fonte em pixels */
-    }
-        </style>
-        </head>
-    <body>
 
-<div id="textoCentralizado">
-    <p>RadiantGlow, o melhor para sua pele</p>
-    <img src="https://i.postimg.cc/kX7nYNX3/gigi.jpg" alt="Sua Imagem">
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Sobre os produtos da RadiantGlow</h2>
+      <h5>Descubra mais sobre nossos produtos</h5>
+      <div class="fakeimg" style="height:200px;">https://i.postimg.cc/kX7nYNX3/gigi.jpg</div>
+      <p>RadiantGlow</p>
+      <p>🌟 Descubra a Magia da Skincare! 🌟
+
+Você merece cuidar da sua pele com amor e carinho, e é por isso que estamos aqui para apresentar nossos incríveis produtos de skincare! Nossa linha é mais do que apenas produtos - é uma jornada de transformação para uma pele radiante e saudável que você vai adorar mostrar ao mundo.
+
+Imagine uma rotina de cuidados com a pele que não só limpa e hidrata, mas também revitaliza e rejuvenesce. Com nossos produtos, essa visão se torna realidade. Desde limpadores suaves até máscaras luxuosas e hidratantes potentes, cada item é formulado com os melhores ingredientes para nutrir e proteger sua pele.
+
+Quer esteja lutando contra manchas, rugas ou apenas querendo um brilho saudável, temos exatamente o que você precisa. Nossos produtos são projetados para se adaptar a todos os tipos de pele, desde a pele oleosa até a pele sensível, garantindo resultados visíveis e duradouros.
+
+Não se trata apenas de ter uma pele bonita - é sobre sentir-se confiante e radiante em sua própria pele. Com nossa linha de skincare, você não apenas cuida da sua pele, mas também cuida de si mesma. Então, dê a sua pele o amor que ela merece e embarque nesta jornada de beleza e bem-estar com nossos produtos de skincare excepcionais!
+
+Experimente agora e descubra a diferença que a skincare de qualidade pode fazer na sua vida. Sua pele nunca se sentiu tão mimada! ✨</p>
+    </div>
+    
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">https://i.postimg.cc/kX7nYNX3/gigi.jpg</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>https://i.postimg.cc/kX7nYNX3/gigi.jpg</p></div>
+      <div class="fakeimg"><p>https://i.postimg.cc/kX7nYNX3/gigi.jpg</p></div>
+      <div class="fakeimg"><p>https://i.postimg.cc/kX7nYNX3/gigi.jpg</p></div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Mais</h2>
 </div>
 
 </body>
 </html>
+
