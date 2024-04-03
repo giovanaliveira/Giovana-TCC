@@ -1,3 +1,4 @@
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
@@ -29,14 +30,17 @@ nav ul li a {
 }
 
 main {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
 }
 
-section {
-  margin-bottom: 30px;
+section, aside {
+  flex: 1;
+  margin-right: 20px;
 }
 
-section h2 {
+section h2, aside h2 {
   margin-bottom: 10px;
 }
 
@@ -58,8 +62,43 @@ section h2 {
   color: #333;
 }
 
-.promotion {
-  color: #009933;
+.add-to-cart {
+  background-color: #009933;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #007a29;
+}
+
+.cart {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.cart-items {
+  margin-bottom: 10px;
+}
+
+.total {
+  font-weight: bold;
+  text-align: right;
+}
+
+.checkout {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.checkout:hover {
+  background-color: #555;
 }
 
 footer {
