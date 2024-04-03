@@ -15,44 +15,53 @@
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
+                <li><a href="#" id="login">Login</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="featured-products">
-            <h2>Produtos em Destaque</h2>
-            <div class="product">
-                <img src="produto1.jpg" alt="Produto 1">
-                <h3>Base Líquida</h3>
-                <p class="price">R$ 39,99</p>
-                <p class="promotion">Leve 2 e pague 1!</p>
-            </div>
-            <div class="product">
-                <img src="produto2.jpg" alt="Produto 2">
-                <h3>Batom Matte</h3>
-                <p class="price">R$ 19,99</p>
-            </div>
+        <section id="login-form" class="hidden">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Usuário:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Senha:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <section class="filter">
+            <h2>Filtros</h2>
+            <!-- Aqui você pode adicionar filtros, como por marca, categoria, etc. -->
         </section>
 
         <section class="products">
-            <h2>Todos os Produtos</h2>
+            <h2>Produtos</h2>
             <div class="product">
-                <img src="produto3.jpg" alt="Produto 3">
-                <h3>Paleta de Sombras</h3>
-                <p class="price">R$ 59,99</p>
+                <img src="produto1.jpg" alt="Produto 1">
+                <h3><a href="produto1.html">Base Líquida</a></h3>
+                <p class="price">R$ 39,99</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
             </div>
-            <div class="product">
-                <img src="produto4.jpg" alt="Produto 4">
-                <h3>Rímel Alongador</h3>
-                <p class="price">R$ 29,99</p>
-                <p class="promotion">10% de desconto</p>
-            </div>
+            <!-- Mais produtos aqui -->
         </section>
+
+        <aside class="cart">
+            <h2>Carrinho de Compras</h2>
+            <div class="cart-items">
+                <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
+            </div>
+            <p class="total">Total: R$ <span>0.00</span></p>
+            <button class="checkout">Finalizar Compra</button>
+        </aside>
     </main>
 
     <footer>
         <p>&copy; 2024 Venda de Maquiagem. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
