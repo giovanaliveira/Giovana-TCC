@@ -1,68 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venda de Maquiagem</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Vendas de skincare</h1>
-        <nav>
-          <div class="topnav">   
-            <a href="#">Inicio</a>   
-            <a href="#">prdutos</a>   
-            <a href="#">sobre</a>
-            <a href="#">contato</a>
+<html>
+    <head>
+      <body>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-            <a href="#" style="float:right">Conta</a> 
-          </div> 
-        </nav>
-    </header>
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
 
-    <main>
-        <section id="login-form" class="hidden">
-            <h2>Login</h2>
-            <form>
-                <label for="username">Usuário:</label><br>
-                <input type="text" id="username" name="username"><br>
-                <label for="password">Senha:</label><br>
-                <input type="password" id="password" name="password"><br><br>
-                <button type="submit">Entrar</button>
-            </form>
-        </section>
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
 
-        <section class="filter">
-            <h2>Filtros</h2>
-            <!-- Aqui você pode adicionar filtros, como por marca, categoria, etc. -->
-        </section>
+.header h1 {
+  font-size: 50px;
+}
 
-        <section class="products">
-            <h2>Produtos</h2>
-            <div class="product">
-                <img src="produto1.jpg" alt="Produto 1">
-                <h3><a href="produto1.html">Base Líquida</a></h3>
-                <p class="price">R$ 39,99</p>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>
-            <!-- Mais produtos aqui -->
-        </section>
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ed94f5;
+}
 
-        <aside class="cart">
-            <h2>Carrinho de Compras</h2>
-            <div class="cart-items">
-                <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
-            </div>
-            <p class="total">Total: R$ <span>0.00</span></p>
-            <button class="checkout">Finalizar Compra</button>
-        </aside>
-    </main>
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #c7dfab;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-    <footer>
-        <p>&copy; 2024 Venda de Maquiagem. Todos os direitos reservados.</p>
-    </footer>
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-    <script src="script.js"></script>
-</body>
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<div class="header">
+  <h1>RadiantGlow</h1>
+  <p>O melhor para sua pele</p>
+</div>
+<div class="topnav">
+  <a href="#">Inicio</a>
+  <a href="#">Comprar agora</a>
+  <a href="#">Descubra os melhores produros para seu tipo de pele</a>
+  <a href="#" style="float:right">Conta</a>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
+
+
+</style>
+<div class="gallery">
+  <a target="_blank" href="https://i.postimg.cc/gjXmxwby/a.jpg">
+    <img src="https://i.postimg.cc/gjXmxwby/a.jpg" alt="Cinque Terre" width="600" height="500">
+  </a>
+  <div class="desc">Kit skincare RadiantGlow</div>
+  </div>
+
+  <div class="gallery">
+  <a target="_blank" href="https://i.postimg.cc/YCjZMckg/gf.jpg">
+    <img src="https://i.postimg.cc/YCjZMckg/gf.jpg" alt="Forest" width="600" height="500">
+  </a>
+  <div class="desc">Kit skincare RadiantGlow</div>
+  </div>
+
+  <div class="gallery">
+  <a target="_blank" href="https://i.postimg.cc/g0xWSXrC/hy.jpg">
+    <img src="https://i.postimg.cc/g0xWSXrC/hy.jpg" alt="Northern Lights" width="600" height="500">
+  </a>
+  <div class="desc">Kit skincare RadiantGlow</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="https://i.postimg.cc/LXVZxbJQ/image.jpg">
+    <img src="https://i.postimg.cc/LXVZxbJQ/image.jpg" alt="Mountains" width="600" height="500">
+    </a>
+  <div class="desc">Kit skincare RadiantGlow</div>
+  </div>
+  <div>
+  <h2>Sobre os produtos da RadiantGlow</h2>
+      <h5>Descubra mais sobre nossos produtos</h5>
+      <p>RadiantGlow</p>
+      <p>🌟 Descubra a Magia da Skincare! 🌟
+
+Você merece cuidar da sua pele com amor e carinho, e é por isso que estamos aqui para apresentar nossos incríveis produtos de skincare! Nossa linha é mais do que apenas produtos - é uma jornada de transformação para uma pele radiante e saudável que você vai adorar mostrar ao mundo.
+
+Imagine uma rotina de cuidados com a pele que não só limpa e hidrata, mas também revitaliza e rejuvenesce. Com nossos produtos, essa visão se torna realidade. Desde limpadores suaves até máscaras luxuosas e hidratantes potentes, cada item é formulado com os melhores ingredientes para nutrir e proteger sua pele.
+
+Quer esteja lutando contra manchas, rugas ou apenas querendo um brilho saudável, temos exatamente o que você precisa. Nossos produtos são projetados para se adaptar a todos os tipos de pele, desde a pele oleosa até a pele sensível, garantindo resultados visíveis e duradouros.
+
+Não se trata apenas de ter uma pele bonita - é sobre sentir-se confiante e radiante em sua própria pele. Com nossa linha de skincare, você não apenas cuida da sua pele, mas também cuida de si mesma. Então, dê a sua pele o amor que ela merece e embarque nesta jornada de beleza e bem-estar com nossos produtos de skincare excepcionais!
+
+Experimente agora e descubra a diferença que a skincare de qualidade pode fazer na sua vida. Sua pele nunca se sentiu tão mimada! ✨</p>
+  </div>
+  <div class="footer">
+  <h2>Mais</h2>
+  </div>
+
+      </body>
+    </head>
 </html>
+
