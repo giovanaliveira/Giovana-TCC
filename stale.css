@@ -1,109 +1,109 @@
 /* Reset de estilos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
 }
 
 nav ul {
-  list-style: none;
+    list-style: none;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 main {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 section, aside {
-  flex: 1;
-  margin-right: 20px;
+    flex: 1;
+    margin-right: 20px;
 }
 
 section h2, aside h2 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .product {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .product img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .price {
-  font-weight: bold;
-  color: #333;
+    font-weight: bold;
+    color: #333;
 }
 
 .add-to-cart {
-  background-color: #009933;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
+    background-color: #009933;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
 }
 
 .add-to-cart:hover {
-  background-color: #007a29;
+    background-color: #007a29;
 }
 
 .cart {
-  background-color: #f2f2f2;
-  padding: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 .cart-items {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .total {
-  font-weight: bold;
-  text-align: right;
+    font-weight: bold;
+    text-align: right;
 }
 
 .checkout {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  width: 100%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    width: 100%;
 }
 
 .checkout:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
