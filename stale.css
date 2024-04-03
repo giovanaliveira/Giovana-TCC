@@ -37,7 +37,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #bde9b9;
+  background-color: #ffffff;
   color: black;
 }
 
@@ -58,7 +58,7 @@ body {
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  background-color: #c5f3bc;
   width: 100%;
   padding: 20px;
 }
