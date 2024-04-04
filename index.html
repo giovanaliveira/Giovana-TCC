@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <body>
+<head>
+<style>
+body {margin:25px;}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+</style>
+</head>
+<body>
 <style>
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
+  margin: 0;
 }
 
-/* Header/Blog Title */
+/* Style the header */
 .header {
-  padding: 30px;
+  background-color: #f1f1f1;
+  padding: 20px;
   text-align: center;
-  background: white;
-}
-
-.header h1 {
-  font-size: 50px;
 }
 
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #ebc8ee;
+  background-color: #333;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #ffffff;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,176 +52,97 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #cff0c8;
+  background-color: #ddd;
   color: black;
 }
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
 </style>
+</head>
+<body>
+
 <div class="header">
-
-
-  <style>
-  h1 {
-    text-align: center;
-  }
-<style>
-  #grad1 {
-    height: 200px;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(184, 248, 192));
-  }
-  </style>
-  
-  
-  <h1> <div id="grad1">RadiantGlow</div> </h1>
-
-</stile>
-
-
-
-  <p>O melhor para sua pele</p>
+  <h1>Header</h1>
 </div>
+
 <div class="topnav">
-  <a href="#">Inicio</a>
-  <a href="#">Produtos</a>
-  <a href="#">Sobre</a>
-  <a href="#">Contato</a>
-  <a href="#" style="float:right">Conta</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
 </div>
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-<style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-div.gallery:hover {
-  border: 1px solid #777;
-}
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
+
+<h2>Responsive Polaroid Images / Cards</h2>
+
+    <div class="slideshow-container">
+
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="https://i.pinimg.com/originals/64/91/fa/6491fa5214d68ee45ae202b315c1a15d.jpg" style="width:100%">
+          <div class="text">Chanel</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="https://i.pinimg.com/originals/61/b2/c8/61b2c8c145b23708528e751aff9b99bf.png" style="width:100%">
+          <div class="text">Dior</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://i.pinimg.com/originals/3c/d5/96/3cd596a44c780879ebfcb3fe4dadf3b4.jpg" style="width:100%">
+            <div class="text">Bruna Tavares</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://i.pinimg.com/originals/bb/34/3b/bb343bd95e5bfaeb4814953573dd985d.jpg" style="width:100%">
+            <div class="text">Marymariamakeup</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="https://i.pinimg.com/originals/46/96/36/469636fbc9114826f7c946bf2df3ffd8.jpg" style="width:100%">
+            <div class="text">Fran By Francine Ehlke</div>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+       <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+<script src="script.js" defer></script>
 
 
+       <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
 
-
-
-
-</style>
-
+<div class="polaroid">
+  <img src="img_5terre.jpg" alt="5 Terre" style="width:100%">
+  <div class="container">
+  <p>Cinque Terre</p>
   </div>
-  <div>
-  <h2>Sobre os produtos da RadiantGlow</h2>
-      <h5>Descubra mais sobre nossos produtos</h5>
-      <p>RadiantGlow</p>
-      <p>🌟 Descubra a Magia da Skincare da nossa nova linha da RadiantGlow! 🌟
+</div>
 
-Você merece cuidar da sua pele com amor e carinho, e é por isso que estamos aqui para apresentar nossos incríveis produtos da RadiantGlow! Nossa nova linha é mais do que apenas produtos - é uma jornada de transformação para uma pele radiante e saudável que você vai adorar mostrar ao mundo.
-
-Imagine uma rotina de cuidados com a pele que não só limpa e hidrata, mas também revitaliza e rejuvenesce. Com nossos produtos, essa visão se torna realidade. Desde limpadores suaves até máscaras luxuosas e hidratantes potentes, cada item é formulado com os melhores ingredientes para nutrir e proteger sua pele.
-
-Quer esteja lutando contra manchas, rugas ou apenas querendo um brilho saudável, a RadiantGlow tem exatamente o que você precisa. Nossos produtos são projetados para se adaptar a todos os tipos de pele, desde a pele oleosa até a pele sensível, garantindo resultados visíveis e duradouros.
-
-Não se trata apenas de ter uma pele bonita - é sobre sentir-se confiante e radiante em sua própria pele. Com nossa nova linha de skincare, você não apenas cuida da sua pele, mas também cuida de si mesma. Então, dê a sua pele o amor que ela merece e embarque nesta jornada de beleza e bem-estar com nossos produtos de skincare excepcionais!
-
-Experimente agora e descubra a diferença que a skincare de qualidade pode fazer na sua vida. Sua pele nunca se sentiu tão mimada! ✨</p>
+<div class="polaroid">
+  <img src="lights600x400.jpg" alt="Norther Lights" style="width:100%">
+  <div class="container">
+  <p>Northern Lights</p>
   </div>
+</div>
 
-
-
-  <div class="gallery">
-    <a target="_blank" href="https://i.postimg.cc/gjXmxwby/a.jpg">
-      <img src="https://i.postimg.cc/gjXmxwby/a.jpg" alt="Cinque Terre" width="700" height="600">
-    </a>
-    <div class="desc">Kit skincare RadiantGlow</div>
-    </div>
-  
-    <div class="gallery">
-    <a target="_blank" href="https://i.postimg.cc/YCjZMckg/gf.jpg">
-      <img src="https://i.postimg.cc/YCjZMckg/gf.jpg" alt="Forest" width="700" height="600">
-    </a>
-    <div class="desc">Kit skincare RadiantGlow</div>
-    </div>
-  
-    <div class="gallery">
-    <a target="_blank" href="https://i.postimg.cc/g0xWSXrC/hy.jpg">
-      <img src="https://i.postimg.cc/g0xWSXrC/hy.jpg" alt="Northern Lights" width="700" height="600">
-    </a>
-    <div class="desc">Kit skincare RadiantGlow</div>
-    </div>
-  
-    <div class="gallery">
-      <a target="_blank" href="https://i.postimg.cc/LXVZxbJQ/image.jpg">
-      <img src="https://i.postimg.cc/LXVZxbJQ/image.jpg" alt="Mountains" width="700" height="600">
-      </a>
-    <div class="desc">Kit skincare RadiantGlow</div>
-      </body>
-    </head>
+</body>
 </html>
-
