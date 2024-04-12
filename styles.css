@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -23,11 +22,11 @@ body {
 }
 
 .topnav a {
-  float: left;
   color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  display: inline-block;
 }
 
 .topnav a:hover {
@@ -48,7 +47,7 @@ body {
   border: 1px solid #cccccc;
   border-radius: 5px;
   overflow: hidden;
-  width: calc(16.66% - 20px); /* Colunas de 6 */
+  width: calc(33.33% - 20px); /* Colunas de 3 */
 }
 
 .gallery img {
