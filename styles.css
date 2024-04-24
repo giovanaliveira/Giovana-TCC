@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * ul {
   list-style-type: none;
   margin: 50;
@@ -21,66 +21,80 @@ li a {
 
 li a:hover {
   background-color: #000000;
-=======
+
 * {
+
   margin: 0;
   padding: 0;
+
+
+  overflow: hidden;
+  background-color: #333;
+
   box-sizing: border-box;
->>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
+
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
+li {
+  float: left;
 }
+
+<<<<<<< HEAD
+li a {
+  display: block;
+  color: white;
 
 .header {
 <<<<<<< HEAD
   background-color: #500000;
-=======
+
   background-color: #770505;
->>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
+
   color: #ffffff;
   padding: 20px 0;
+
   text-align: center;
+
+
 }
 
 .topnav {
-<<<<<<< HEAD
+
   background-color: #500000;
-=======
+
   background-color: #770505;
->>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
+
   overflow: hidden;
 }
 
 .topnav a {
   color: #ffffff;
   text-align: center;
-<<<<<<< HEAD
+
   padding: 10px 10px;
-=======
+
+
   padding: 14px 16px;
->>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
+
   text-decoration: none;
-  display: inline-block;
 }
 
-.topnav a:hover {
-  background-color: #dddddd;
-  color: #000;
+li a:hover {
+  background-color: #111;
 }
+
+
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px auto;
-<<<<<<< HEAD
+
   max-width: 120px;
 =======
   max-width: 1200px;
->>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
+
 }
 
 .gallery {
@@ -107,8 +121,7 @@ body {
   .container {
     justify-content: flex-start;
   }
-<<<<<<< HEAD
+
 }
-=======
+
 }
->>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
