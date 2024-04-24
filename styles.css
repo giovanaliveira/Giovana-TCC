@@ -65,7 +65,7 @@ body {
   border: 1px solid #cccccc;
   border-radius: 5px;
   overflow: hidden;
-  width: calc(33.33% - 20px);
+  width: calc(33.33% - 20px); /* Colunas de 3 */
 }
 
 .gallery img {
