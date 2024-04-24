@@ -14,7 +14,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 100px;
   text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ body {
 .header {
   background-color: #770505;
   color: #ffffff;
-  padding: 20px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -42,7 +42,7 @@ body {
 .topnav a {
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 100px 100px;
   text-decoration: none;
   display: inline-block;
 }
@@ -56,27 +56,27 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px auto;
-  max-width: 1200px;
+  margin: 50px auto;
+  max-width: 100px;
 }
 
 .gallery {
-  margin: 10px;
-  border: 1px solid #cccccc;
+  margin: 100px;
+  border: 3px solid #cccccc;
   border-radius: 5px;
   overflow: hidden;
   width: calc(33.33% - 20px); /* Colunas de 3 */
 }
 
 .gallery img {
-  width: 30%;
+  width: 50%;
   height: auto;
 }
 
 .desc {
   background-color: #ffffff;
   color: #000000;
-  padding: 10px 0;
+  padding: 100px 0;
   text-align: center;
 }
 
