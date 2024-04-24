@@ -1,278 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makeup Info</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+  <body>
 
 <div class="header">
   <h1>Makeup</h1>
 </div>
 
 <div class="topnav">
-  <a href="#">Inicio</a>
-  <a href="#">Marcas</a>
-  <a href="#">MakeUp</a>
-  <a href="#">Skincare</a>
+  <button class="nav-button" onclick="showHome()">Inicio</button>
+  <button class="nav-button" onclick="showBrands()">Marcas</button>
+  <button class="nav-button" onclick="showMakeup()">MakeUp</button>
+  <button class="nav-button" onclick="showSkincare()">Skincare</button>
 </div>
 
-<h2>Descubra sobre os melhores produtos que você precisa comprar aqui</h2>
+<div id="infoContainer"></div>
 
-<div class="gallery">
-  <a target="_blank" href="https://i.postimg.cc/XvP4pLgp/000000000000000000000.png">
-    <img src="https://i.postimg.cc/XvP4pLgp/000000000000000000000.png" alt="Fran By Francine Ehlke">
-  </a>
-  <div class="desc">Fran By Francine Ehlke</div>
-</div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/kG8pn2Jp/creamy.webp" alt="Creamy" width="200" height="150">
+  </div>
+</a>
 
-<div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/wB38DNWZ/logo-mac-prancheta-1.png">
-              <img src="https://i.postimg.cc/wB38DNWZ/logo-mac-prancheta-1.png" alt="MAC" width="1000" height="900">
-            </a>
-            <div class="desc">MAC</div>
-          </div>
-          
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/g2PHvKrB/dior.jpg">
-              <img src="https://i.postimg.cc/g2PHvKrB/dior.jpg" alt="Dior" width="1000" height="900">
-            </a>
-            <div class="desc">Dior</div>
-          </div>
-          
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/SRgJ1Ch8/mari.jpg">
-              <img src="https://i.postimg.cc/SRgJ1Ch8/mari.jpg" alt="Marimariamakeup" width="1000" height="900">
-            </a>
-            <div class="desc">Marimariamakeup</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/GtnMzhN4/ada-tina.png" alt="Ada Tina" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/VsKw4Tkr/ysl.jpg">
-              <img src="https://i.postimg.cc/VsKw4Tkr/ysl.jpg" alt="YSL" width="1000" height="900">
-            </a>
-            <div class="desc">YSL</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/FRwtv46v/bioage.png" alt="Bioage" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/XYC0jYcd/Logo-Luisance.png">
-              <img src="https://i.postimg.cc/XYC0jYcd/Logo-Luisance.png" alt="Luisance" width="1000" height="900">
-            </a>
-            <div class="desc">Luisance</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/1zZZnsR3/bioderma.png" alt="Bioderma" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/bJzX9HX9/vivai.png">
-              <img src="https://i.postimg.cc/bJzX9HX9/vivai.png" alt="Vivai" width="1000" height="900">
-            </a>
-            <div class="desc">Vivai</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/rFFXxfL5/dermage.png" alt="Dermage" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/9Fsvnj5M/dalla.png">
-              <img src="https://i.postimg.cc/9Fsvnj5M/dalla.png" alt="Dalla Makepu" width="1000" height="900">
-            </a>
-            <div class="desc">Dalla Makeup</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/Qt1sYC65/cerave.png" alt="Cera-ve" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/j5q97xN8/vizzela.jpg">
-              <img src="https://i.postimg.cc/j5q97xN8/vizzela.jpg" alt="Vizzela" width="1000" height="900">
-            </a>
-            <div class="desc">Vizzela</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/MHLc0vXB/byoma.png" alt="Byoma" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/HW8G4LRK/oceane.png">
-              <img src="https://i.postimg.cc/HW8G4LRK/oceane.png" alt="Oceane" width="1000" height="900">
-            </a>
-            <div class="desc">Oceane</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/GtmYJWQW/glow-recipe.jpg" alt="Glow Recipe" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/zDssdr1f/max-love.png">
-              <img src="https://i.postimg.cc/zDssdr1f/max-love.png" alt="max love" width="1000" height="900">
-            </a>
-            <div class="desc">Max love</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/hjq1xZNn/la-mer.png" alt="La Mer" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/kGKpr2dg/ruby-rose.jpg">
-              <img src="https://i.postimg.cc/kGKpr2dg/ruby-rose.jpg" alt="Ruby Rose" width="1000" height="900">
-            </a>
-            <div class="desc">Ruby Rose</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/nh0y3BpN/adcos-pro.png" alt="Adcos Pro" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/RZXbzr2K/avon.png">
-              <img src="https://i.postimg.cc/RZXbzr2K/avon.png" alt="Avon" width="1000" height="900">
-            </a>
-            <div class="desc">Avon</div>
-          </div>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/TwpfVQbk/phiosophy.jpg" alt="Phiosophy" width="200" height="150">
+  </div>
+</a>
 
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/5ydsmfFd/tracta.png">
-              <img src="https://i.postimg.cc/5ydsmfFd/tracta.png" alt="Tracta" width="1000" height="900">
-            </a>
-            <div class="desc">Tracta</div>
-          </div>
-          
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/Zn5C2dNr/natura.jpg">
-              <img src="https://i.postimg.cc/Zn5C2dNr/natura.jpg" alt="Natura" width="1000" height="900">
-            </a>
-            <div class="desc">Natura</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/FKZzv1mS/maybelline.png">
-              <img src="https://i.postimg.cc/FKZzv1mS/maybelline.png" alt="Maybelline" width="1000" height="900">
-            </a>
-            <div class="desc">Maybelline</div>
-          </div>
-
-<div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/kMK1gRkn/logo-dailus.png">
-              <img src="https://i.postimg.cc/kMK1gRkn/logo-dailus.png" alt="Dailus" width="1000" height="900">
-            </a>
-            <div class="desc">Dailus</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/65B06jr0/quem-disse-berenice.png">
-              <img src="https://i.postimg.cc/65B06jr0/quem-disse-berenice.png" alt="Quem disse Berenice ?" width="1000" height="900">
-            </a>
-            <div class="desc">Quem disse Berenice ?</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/YC6MNSGk/benefit.png">
-              <img src="https://i.postimg.cc/YC6MNSGk/benefit.png" alt="Benefit" width="1000" height="900">
-            </a>
-            <div class="desc">Benefit</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/90cBMDqj/fenty.png">
-              <img src="https://i.postimg.cc/90cBMDqj/fenty.png" alt="Fenty Beauty" width="1000" height="900">
-            </a>
-            <div class="desc">Fenty Beauty</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/j2CLZTp7/selena.png">
-              <img src="https://i.postimg.cc/j2CLZTp7/selena.png" alt="Rare Beauty" width="1000" height="900">
-            </a>
-            <div class="desc">Rare Beauty</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/5NRwc7pJ/charlote.png">
-              <img src="https://i.postimg.cc/5NRwc7pJ/charlote.png" alt="Charlotte Tilbury" width="1000" height="900">
-            </a>
-            <div class="desc">Charlotte Tilbury</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/0ySKT8bG/laura-mercier-logo.jpg">
-              <img src="https://i.postimg.cc/0ySKT8bG/laura-mercier-logo.jpg" alt="Laura Mercier" width="1000" height="900">
-            </a>
-            <div class="desc">Laura Mercier</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/k4Y5VZ2X/tarte.png">
-              <img src="https://i.postimg.cc/k4Y5VZ2X/tarte.png" alt="Tarte" width="1000" height="900">
-            </a>
-            <div class="desc">Tarte</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/TPqLPCjp/boobi.png">
-              <img src="https://i.postimg.cc/TPqLPCjp/boobi.png" alt="Bobbi Brown" width="1000" height="900">
-            </a>
-            <div class="desc">Bobbi Brown</div>
-          </div>
-
-
-
-
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/XNzhr0v8/bella-femme.webp">
-              <img src="https://i.postimg.cc/XNzhr0v8/bella-femme.webp" alt="Bella Femme" width="1000" height="900">
-            </a>
-            <div class="desc">Bella Femme</div>
-          </div>
-
-          
-
-          
-
-        
-
-          
-
-          
-
-          
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/ZRr84p02/vult.jpg">
-              <img src="https://i.postimg.cc/ZRr84p02/vult.jpg" alt="Vult" width="1000" height="900">
-            </a>
-            <div class="desc">Vult</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/2SMhW2Zg/eudora.jpg">
-              <img src="https://i.postimg.cc/2SMhW2Zg/eudora.jpg" alt="Eudora" width="1000" height="900">
-            </a>
-            <div class="desc">Eudora</div>
-          </div>
-
-          
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/W4ctjKrp/o-boticario.jpg">
-              <img src="https://i.postimg.cc/W4ctjKrp/o-boticario.jpg" alt="O boticario" width="1000" height="900">
-            </a>
-            <div class="desc">O boticario</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/SK4QH9FJ/nars.png">
-              <img src="https://i.postimg.cc/SK4QH9FJ/nars.png" alt="NARS" width="1000" height="900">
-            </a>
-            <div class="desc">NARS</div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/HnFdzc9W/nyx.png">
-              <img src="https://i.postimg.cc/HnFdzc9W/nyx.png" alt="NYX" width="1000" height="900">
-            </a>
-            <div class="desc">NYX</div>
-          </div>
-
-
-          
-
-         
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/1RKHdrLR/Lancome-Symbol.png">
-              <img src="https://i.postimg.cc/1RKHdrLR/Lancome-Symbol.png" alt="Lancome" width="1000" height="900">
-            </a>
-            <div class="desc">Lancome</div>
-          </div>
-
-          
-
-          <div class="gallery">
-            <a target="_blank" href="https://i.postimg.cc/dQWCdHbC/kiko-milano.png">
-              <img src="https://i.postimg.cc/dQWCdHbC/kiko-milano.png" alt="Kiko Milano" width="1000" height="900">
-            </a>
-            <div class="desc">Kiko Milano</div>
-          </div>
-
-</body>
-</html>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/hvWbLywg/principia.webp" alt="Principia" width="200" height="150">
+  </div>
+</a>
