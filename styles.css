@@ -1,81 +1,20 @@
-
-* ul {
+ul {
   list-style-type: none;
-  margin: 50;
-  padding: 50;
-  overflow: hidden;
-  background-color: #500000;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #000000;
-
-* {
-
   margin: 0;
   padding: 0;
-
-
   overflow: hidden;
   background-color: #333;
-
-  box-sizing: border-box;
-
 }
 
 li {
   float: left;
 }
 
-<<<<<<< HEAD
 li a {
   display: block;
   color: white;
-
-.header {
-<<<<<<< HEAD
-  background-color: #500000;
-
-  background-color: #770505;
-
-  color: #ffffff;
-  padding: 20px 0;
-
   text-align: center;
-
-
-}
-
-.topnav {
-
-  background-color: #500000;
-
-  background-color: #770505;
-
-  overflow: hidden;
-}
-
-.topnav a {
-  color: #ffffff;
-  text-align: center;
-
-  padding: 10px 10px;
-
-
   padding: 14px 16px;
-
   text-decoration: none;
 }
 
@@ -83,45 +22,17 @@ li a:hover {
   background-color: #111;
 }
 
-
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px auto;
-
-  max-width: 120px;
-=======
-  max-width: 1200px;
-
-}
-
-.gallery {
-  margin: 10px;
-  border: 1px solid #cccccc;
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #550202;
+  color: #f8f8f8;
+  border: none;
   border-radius: 5px;
-  overflow: hidden;
-  width: calc(33.33% - 20px); /* Colunas de 3 */
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.desc {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 10px 0;
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    justify-content: flex-start;
+  cursor: pointer;
   }
-
-}
-
-}
+  .container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  }

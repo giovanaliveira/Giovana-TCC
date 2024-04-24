@@ -13,20 +13,53 @@
     <title>Makeup Info</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <script>
-      let count = 0;
-   
-       function incrementCount() {
-       count++;
-       document.getElementById("count-display").textcotent = count;
-       }
-
+    
   </head>
     <body>
   
-<h1>Manipulação do DOM</h1>
-<button onclick="incrementCount()">Ciique aqui</button>
-<p>Total de Clicks: <span id="count-display">0</span></p>
+      <script>
+        let count = 0;
+        function incrementCount(){
+          count++;
+          document.getElementById("count-display").textContent = count;
+        }
+      </script>
+    </head>
+    <body>
+         <main>
+            <div class="container">
+                <button onclick="incrementCount()">Clique aqui</button>
+                <p>Total de Cliques: <span id="count-display">0</span> </p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <div class="header">
