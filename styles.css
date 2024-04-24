@@ -1,7 +1,7 @@
 ul {
   list-style-type: none;
-  margin: 100;
-  padding: 300;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   background-color: #770505;
 }
@@ -14,12 +14,12 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 200px;
+  padding: 20px 208px; /* Reduzindo o padding horizontal */
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #000000;
 }
 
 body {
@@ -34,53 +34,29 @@ body {
   text-align: center;
 }
 
-.topnav {
-  background-color: #770505;
-  overflow: hidden;
-}
-
-.topnav a {
-  color: #ffffff;
-  text-align: center;
-  padding: 100px 100px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.topnav a:hover {
-  background-color: #dddddd;
-  color: #000;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 50px auto;
-  max-width: 100px;
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .gallery {
-  margin: 100px;
+  margin: 10px;
   border: 3px solid #cccccc;
   border-radius: 5px;
   overflow: hidden;
-  width: calc(33.33% - 20px); /* Colunas de 3 */
+  width: calc(10% - 20px); 
 }
 
 .gallery img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
-
-.desc {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 100px 0;
-  text-align: center;
-}
-
-@media screen and (max-width: 50px) {
-  .container 
-    justify-content flex-start
-  }
