@@ -3,118 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Makeup Info</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-  
-  <div class="header">    <h1>Makeup</h1>  <body>
+  <body>
 
-    <ul>
-      <li><a class="active" href="#home">Inicio</a></li>
-      <li><a href="#news">Make up</a></li>
-      <li><a href="#contact">Skincare</a></li>
-      <li><a href="#about">Marcas</a></li>
-    </ul>
+<div class="header">
+  <h1>Makeup</h1>
+</div>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/hvWbLywg/principia.webp" alt="Principia" width="200" height="150">
-      </div>
-    </a>
+<div class="topnav">
+  <button class="nav-button" onclick="showHome()">Inicio</button>
+  <button class="nav-button" onclick="showBrands()">Marcas</button>
+  <button class="nav-button" onclick="showMakeup()">MakeUp</button>
+  <button class="nav-button" onclick="showSkincare()">Skincare</button>
+</div>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/GtnMzhN4/ada-tina.png" alt="Ada Tina" width="200" height="150">
-      <div>
-    </a>
+<div id="infoContainer"></div>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/FRwtv46v/bioage.png" alt="Bioage" width="200" height="150">
-      </div>
-    </a>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/kG8pn2Jp/creamy.webp" alt="Creamy" width="200" height="150">
+  </div>
+</a>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/1zZZnsR3/bioderma.png" alt="Bioderma" width="200" height="150">
-      </div>
-    </a>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/GtnMzhN4/ada-tina.png" alt="Ada Tina" width="200" height="150">
+  </div>
+</a>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/rFFXxfL5/dermage.png" alt="Dermage" width="200" height="150">
-      </div>
-    </a>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/FRwtv46v/bioage.png" alt="Bioage" width="200" height="150">
+  </div>
+</a>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/Qt1sYC65/cerave.png" alt="Cera-ve" width="200" height="150">
-      </div>
-    </a>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/1zZZnsR3/bioderma.png" alt="Bioderma" width="200" height="150">
+  </div>
+</a>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/MHLc0vXB/byoma.png" alt="Byoma" width="200" height="150">
-      </div>
-    </a>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/rFFXxfL5/dermage.png" alt="Dermage" width="200" height="150">
+  </div>
+</a>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/GtmYJWQW/glow-recipe.jpg" alt="Glow Recipe" width="200" height="150">
-      </div>
-    </a>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/Qt1sYC65/cerave.png" alt="Cera-ve" width="200" height="150">
+  </div>
+</a>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/hjq1xZNn/la-mer.png" alt="La Mer" width="200" height="150">
-      </div>
-    </a>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/MHLc0vXB/byoma.png" alt="Byoma" width="200" height="150">
+  </div>
+</a>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/nh0y3BpN/adcos-pro.png" alt="Adcos Pro" width="200" height="150">
-      </div>
-    </a>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/GtmYJWQW/glow-recipe.jpg" alt="Glow Recipe" width="200" height="150">
+  </div>
+</a>
 
-    <a href="pagina.html" target="_blank">
-      <div class="gallery">
-        <img src="https://i.postimg.cc/TwpfVQbk/phiosophy.jpg" alt="Phiosophy" width="200" height="150">
-      </div>
-    </a>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/hjq1xZNn/la-mer.png" alt="La Mer" width="200" height="150">
+  </div>
+</a>
 
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/nh0y3BpN/adcos-pro.png" alt="Adcos Pro" width="200" height="150">
+  </div>
+</a>
 
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/TwpfVQbk/phiosophy.jpg" alt="Phiosophy" width="200" height="150">
+  </div>
+</a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+<a href="pagina.html" target="_blank">
+  <div class="gallery">
+    <img src="https://i.postimg.cc/hvWbLywg/principia.webp" alt="Principia" width="200" height="150">
+  </div>
+</a>
