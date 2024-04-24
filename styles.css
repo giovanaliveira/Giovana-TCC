@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * ul {
   list-style-type: none;
   margin: 50;
@@ -20,6 +21,12 @@ li a {
 
 li a:hover {
   background-color: #000000;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+>>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
 }
 
 body {
@@ -28,21 +35,33 @@ body {
 }
 
 .header {
+<<<<<<< HEAD
   background-color: #500000;
+=======
+  background-color: #770505;
+>>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
   color: #ffffff;
   padding: 20px 0;
   text-align: center;
 }
 
 .topnav {
+<<<<<<< HEAD
   background-color: #500000;
+=======
+  background-color: #770505;
+>>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
   overflow: hidden;
 }
 
 .topnav a {
   color: #ffffff;
   text-align: center;
+<<<<<<< HEAD
   padding: 10px 10px;
+=======
+  padding: 14px 16px;
+>>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
   text-decoration: none;
   display: inline-block;
 }
@@ -57,7 +76,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px auto;
+<<<<<<< HEAD
   max-width: 120px;
+=======
+  max-width: 1200px;
+>>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
 }
 
 .gallery {
@@ -84,4 +107,8 @@ body {
   .container {
     justify-content: flex-start;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 04323bb9c88566356d010ad46162ffa4c849d430
