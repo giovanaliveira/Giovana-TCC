@@ -14,8 +14,9 @@ body {
 .header {
   background-color: #770505;
   color: #ffffff;
-  padding: 20px 0;
+  padding: 70px 0;
   text-align: center;
+  font-size: 2em;
 }
 
 .navbar {
@@ -24,22 +25,25 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #770505;
+  text-align: center; /* Adicionando centralização */
+  font-size: 2em;
+  text-rendering: ;
 }
 
 .navbar li {
-  float: left;
+  display: inline-block; /* Alterando para exibição em linha para permitir a centralização */
 }
 
 .navbar li a {
   display: block;
   color: white;
-  text-align: center;
-  padding: 20px;
+  padding: 50px;
   text-decoration: none;
 }
 
 .navbar li a:hover {
-  background-color: #000000;
+  background-color: #ff0000;
+  text-align: center;
 }
 
 .container {
@@ -60,12 +64,13 @@ body {
   border: 3px solid #cccccc;
   border-radius: 5px;
   overflow: hidden;
-  width: calc(20% - 20px);
+  width: calc(15% - 10px);
 }
 
 .gallery img {
   width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 
 /* Estilos para telas menores que 768px */
@@ -90,7 +95,7 @@ body {
 }
 
 /* Estilos para telas menores que 480px */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 200px) {
   .navbar {
     padding: 10px 0;
   }
