@@ -14,7 +14,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 208px; /* Reduzindo o padding horizontal */
+  padding: 20px 208px; 
   text-decoration: none;
 }
 
@@ -57,6 +57,33 @@ body {
 }
 
 .gallery img {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 190px;
+}
+
+/* Estilos para tablet */
+@media screen and (max-width: 768px) {
+  li a {
+    padding: 20px 20px; 
+  }
+
+  .gallery {
+    width: calc(25% - 20px); 
+  }
+
+  .gallery img {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
+/* Estilos para celular */
+@media screen and (max-width: 480px) {
+  li a {
+    padding: 20px 10px; 
+  }
+
+  .gallery {
+    width: calc(50% - 20px); 
+  }
 }
