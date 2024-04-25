@@ -1,4 +1,17 @@
-ul {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.header {
+  background-color: #770505;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6,46 +19,33 @@ ul {
   background-color: #770505;
 }
 
-li {
+.navbar li {
   float: left;
 }
 
-li a {
+.navbar li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 208px; 
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+.navbar li a:hover {
   background-color: #000000;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-}
-
-.header {
-  background-color: #770505;
-  color: #ffffff;
-  padding: 50px 0;
-  text-align: center;
-}
-
 .container {
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px auto;
-  max-width: 100%;
 }
 
 .row {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gallery {
@@ -53,37 +53,22 @@ body {
   border: 3px solid #cccccc;
   border-radius: 5px;
   overflow: hidden;
-  width: calc(10% - 20px); 
+  width: calc(20% - 20px); /* Define a largura das imagens */
 }
 
 .gallery img {
-  width: 200px;
-  height: 190px;
+  width: 100%;
+  height: auto;
 }
 
-/* Estilos para tablet */
-@media screen and (max-width: 768px) {
-  li a {
-    padding: 20px 20px; 
-  }
-
+@media only screen and (max-width: 768px) {
   .gallery {
-    width: calc(25% - 20px); 
-  }
-
-  .gallery img {
-    width: 100%; 
-    height: auto; 
+    width: calc(50% - 20px); /* Altera a largura das imagens para telas menores */
   }
 }
 
-/* Estilos para celular */
-@media screen and (max-width: 480px) {
-  li a {
-    padding: 20px 10px; 
-  }
-
+@media only screen and (max-width: 480px) {
   .gallery {
-    width: calc(50% - 20px); 
+    width: calc(100% - 20px); /* Altera a largura das imagens para telas pequenas (como celulares) */
   }
 }
