@@ -118,4 +118,11 @@ body {
   .gallery {
     width: calc(50% - 20px);
   }
+
+
+  }
+@media screen and (max-width: 480px) {
+  .button-container {
+    display: none; /* Oculta os botões em telas menores que 480px */
+  }
 }
