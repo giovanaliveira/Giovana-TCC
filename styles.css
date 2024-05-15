@@ -5,8 +5,31 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #2a2a2a;
+}
+
+.button-container {
+  text-align: center; 
+}
+
+.button {
   background-color: #ffffff;
+  border-color: none;
+  color: black;
+  padding: 40px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 50px 50px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 25px; 
+  font-family: Monospace;
+}
+
+.button:hover {
+  background-color: #7e7e7e;
 }
 
 .header {
@@ -14,19 +37,8 @@ body {
   color: #000000;
   padding: 70px 0;
   text-align: center;
-  font-size: 2em;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
- overflow: hidden;
-  background-color: #000000;
-  text-align: center; 
-  font-size: 1.5em;
-  text-rendering:
+  font-size: 3em;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .navbar li {
