@@ -128,5 +128,7 @@ body {
 
   .button {
     margin: 10px;
+    padding: 20px 40px;
+    font-size: 18px;
   }
 }
