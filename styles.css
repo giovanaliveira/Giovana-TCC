@@ -85,6 +85,11 @@ body {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 1em; 
+  }
+
 @media screen and (max-width: 600px) {
   .navbar li {
     float: none;
@@ -134,3 +139,4 @@ body {
     font-size: 16px;
   }
 }
+
