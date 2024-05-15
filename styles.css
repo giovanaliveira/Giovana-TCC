@@ -14,9 +14,9 @@ body {
 }
 
 .button {
-  background-color: #ffffff;
+  background-color: #000000;
   border-color: none;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 40px 100px;
   text-align: center;
   text-decoration: none;
