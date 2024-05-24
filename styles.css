@@ -9,29 +9,6 @@ body {
   color: #2a2a2a;
 }
 
-.button-container {
-  text-align: center; 
-}
-
-.button {
-  background-color: #000000;
-  border-color: none;
-  color: rgb(255, 255, 255);
-  padding: 40px 100px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px 20px;
-  cursor: pointer;
-  border-radius: 100px;
-  font-size: 25px; 
-  font-family: 'Jack Input'
-}
-
-.button:hover {
-  background-color: #7e7e7e;
-}
-
 .header {
   padding: 30px 0;
   text-align: center;
@@ -44,31 +21,36 @@ body {
   text-align: center;
   font-size: 100%;
   font-family: "Courier New", Courier, monospace;
-  display:inline-block
-  text-align: center;
 }
 
-.navbar li {
-  display: inline-block; 
-}
-
-.navbar li a {
-  display: block;
-  color: rgb(255, 255, 255);
-  padding: 50px;
+.menu a {
+  display: inline-block;
+  padding: 10px 20px;
   text-decoration: none;
+  color: #000000;
 }
 
-.navbar li a:hover {
-  background-color: #000000;
+.button-container {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 16px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .row {
@@ -82,7 +64,7 @@ body {
   border: 3px solid #ffffff;
   border-radius: 50%;
   overflow: hidden;
-  width: calc(15% - 3px);
+  width: calc(20% - 20px); 
 }
 
 .gallery img {
@@ -92,58 +74,20 @@ body {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 40px) {
-  .header h1 {
-  font-size: 1em; 
-  }
-}
-
-@media screen and (max-width: 60px) {
-  .navbar li {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-
-  .navbar li a {
-    padding: 15px;
-  }
-
-  .container {
-    margin: 10px auto;
-  }
-
+@media screen and (max-width: 768px) {
   .gallery {
     width: calc(33.33% - 20px);
   }
 }
 
-@media screen and (max-width: 100px) {
-  .navbar {
-    padding: 10px 0;
-  }
-
-  .navbar li a {
-    padding: 10px;
-  }
-
+@media screen and (max-width: 480px) {
   .gallery {
     width: calc(50% - 20px);
   }
 }
 
-@media screen and (max-width: 280px) {
-  .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-    text-align: center; 
-  }
-
-  .button {
-    margin: 10px;
-    padding: 15px 30px;
-    font-size: 16px;
+@media screen and (max-width: 320px) {
+  .gallery {
+    width: calc(100% - 20px);
   }
 }
