@@ -87,8 +87,8 @@ body {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 200px) {
   .gallery {
-    width: calc(100% - 20px);
+    width: calc(40% - 20px);
   }
 }
