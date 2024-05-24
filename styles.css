@@ -17,15 +17,15 @@ body {
   background-color: #000000;
   border-color: none;
   color: rgb(255, 255, 255);
-  padding: 40px 100px;
+  padding: 30px 100px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 10px 100px;
   cursor: pointer;
-  border-radius: 40px;
+  border-radius: 30px;
   font-size: 25px; 
-  font-family: Monospace;
+  font-family: 'Jack Input'
 }
 
 .button:hover {
@@ -38,7 +38,7 @@ body {
   padding: 70px 0;
   text-align: center;
   font-size: 80px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'riesling'
 }
 
 .menu {
@@ -97,8 +97,9 @@ body {
 
 @media screen and (max-width: 480px) {
   .header h1 {
-    font-size: 1em; 
+  font-size: 1em; 
   }
+}
 
 @media screen and (max-width: 600px) {
   .navbar li {
@@ -120,7 +121,7 @@ body {
   }
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 100px) {
   .navbar {
     padding: 10px 0;
   }
@@ -134,7 +135,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 280px) {
   .button-container {
     display: flex;
     flex-wrap: wrap;
